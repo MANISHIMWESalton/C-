@@ -1,48 +1,54 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int main(){
 //Operaters of three numbers
 
 //Addition
    int number1,number2,number3;
 
-   printf("Enter three numbers: ");
-   scanf("%d %d %d",&number1,&number2,&number3);
+   cout<<"Enter three numbers: ";
+   cin>> number1 >> number2 >> number3;
    int sum = number1+number2+number3;
-   printf("Addition: %d\n",sum);
+   cout<<"Addition: " <<sum<<endl;
 
 //Substuction
 int remain = number1-number2-number3;
- printf("Substuction: %d\n",remain);
+ cout<<"Substuction: " <<remain<<endl;
 
  //Multiplication
 int multiple = number1*number2*number3;
-printf("Multiplication: %d\n",multiple);
+cout<<"Multiplication: " <<multiple<<endl;
 
 //Division
 int division = number1/number2/number3;
-printf("Division: %d\n",division);
+cout<<"Division: " <<division<<endl;
 //Modulus
 int modulus = number1%number2%number3;
-printf("Remainder: %d\n",modulus);
+cout<<"Remainder: " <<modulus<<endl;
 
 
 // lab activity Add two numbers
 
-int number1 ,number2;
 int result;
-printf("Enter Two numbers:");
-scanf("%d %d",&number1,&number2);
+cout<<("Enter Two numbers:");
+cin>>number1 >>number2;
 result = number1+number2;
-printf("The sum is : %d \n",result);
+cout<<"The sum is : " <<result<<endl;
 
 // Area of rectangle
 
 int length, width;
 float area;
-printf("Enter length and width: ");
-scanf("%d %d",&length,&width);
+cout<<"Enter length and width: ";
+cin>> length >> width;
  area = (float) length*width; 
- printf("The area of rectangle is : %.2f \n",area);
-
+ cout<<"The area of rectangle is : " <<area<<endl;
+//Write a C++ program that inputs temperature in Celsius and converts it to Fahrenheit
+float celsius;
+float fahrenheit;
+cout<<"Enter temperature in Celsius: ";
+cin>> celsius;
+fahrenheit = (celsius * 9 / 5) + 32;
+cout<<"Fahrenheit = " << fahrenheit<<endl;
     return 0;
 }
